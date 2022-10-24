@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Timer</h1>
+    <div id="display" class="display animation-display">
+        <div class="dis display-hour">
+            <input type="number" name="hour" id="hour" value="00">
+            <label for="hour">Hours</label>
+            <span onclick="hrs(this)" class="sinais plus" id="hour-plus">+</span>
+            <span onclick="hrs(this)" class="sinais dec" id="hour-dec">-</span>
+        </div>
+        <div class="dis display-hour">
+            <input type="number" name="minutes" id="minutes" value="00">
+            <label for="minutes">Min</label>
+            <span onclick="mins(this)" class="sinais plus" id="min-plus">+</span>
+            <span onclick="mins(this)" class="sinais dec" id="min-dec">-</span>
+        </div>
+        <div class="dis display-hour">
+            <input type="number" name="seconds" id="seconds" value="00">
+            <label for="seconds">Sec</label>
+            <span onclick="secs(this)" class="sinais plus" id="sec-plus">+</span>
+            <span onclick="secs(this)" class="sinais dec" id="sec-dec">-</span>
+        </div>
+    </div>
+    <div id="controller" class="controller">
+        <button onclick="start()" id="start" class="button">start</button>
+        <button onclick="stop()" id="pause" class="button">stop</button>
+        <button onclick="reset()" id="stop" class="button">reset</button>
+    </div>
+
+    <audio id="song" src="/audio/famy-ava-speed-up-tiktok-version-lyrics_jE16laj0.mp3"></audio>
+    <script src="/js/increse.js"></script>
+</body>
+</html>
